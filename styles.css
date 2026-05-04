@@ -6,11 +6,12 @@
 }
 
 :root {
-    --primary-color: #879a65;
-    --primary-dark: #5f7a45;
-    --primary-light: #8faa7a;
+    --primary-color: #8c9a65;
+    --primary-dark: #677a45;
+    --primary-light: #cae6a9;
     --secondary-color: #b8c99e;
     --accent-color: #d4e4c7;
+    --pink-color: #cf8f8a;
     --text-dark: #2d3436;
     --text-medium: #636e72;
     --text-light: #95a5a6;
@@ -193,33 +194,33 @@ body {
 }
 
 .btn-primary {
-    background: #cc8482;
+    background: var(--pink-color);
     color: white;
 }
 
 .btn-primary:hover {
-    background: #cc8482;
+    background: var(--pink-color);
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
 }
 
 .btn-secondary {
-    background: #cc8482;
+    background: var(--pink-color);
     color: white;
 }
 
 .btn-secondary:hover {
-    background: #cc8482;
+    background: var(--pink-color);
     transform: translateY(-1px);
 }
 
 .btn-outline {
-    background: #cc8482;
+    background: var(--pink-color);
     color: white;
 }
 
 .btn-outline:hover {
-    background: #cc8482;
+    background: var(--pink-color);
     transform: translateY(-1px);
 }
 
@@ -301,6 +302,16 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-bottom: 3rem;
+}
+
+.current-work-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.current-work-container .work-card {
+    max-width: 400px;
 }
 
 .work-card {
@@ -469,13 +480,13 @@ body {
 }
 
 .tech-tag {
-    background: var(--bg-matcha);
-    color: var(--primary-dark);
+    background: var(--pink-color);
+    color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 0.25rem;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--pink-color);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     display: inline-block;
 }
@@ -528,25 +539,32 @@ body {
 }
 
 .contact-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 50px;
-    color: white;
-    text-decoration: none;
     font-size: 1.2rem;
     transition: var(--transition);
     border-radius: 50%;
-    border: 1px solid #cc8482;
-    background: #cc8482;
+    border: 1px solid var(--pink-color);
+    background: var(--pink-color);
+    color: white !important;
+}
+
+.contact-link i {
+    color: white !important;
 }
 
 .contact-link:hover {
     background: white;
-    color: #cc8482;
-    border-color: #cc8482;
+    color: var(--pink-color) !important;
+    border-color: var(--pink-color);
     transform: translateY(-2px);
+}
+
+.contact-link:hover i {
+    color: var(--pink-color) !important;
 }
 
 /* Project Presentation */
@@ -900,6 +918,20 @@ body {
     .work-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .work-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
 
     .filter-buttons {
