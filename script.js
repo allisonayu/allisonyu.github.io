@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
             );
 
             // Open email client
-            const mailtoLink = `mailto:your.email@example.com?subject=${emailSubject}&body=${emailBody}`;
+            const mailtoLink = `mailto:allison.a.yu@gmail.com?subject=${emailSubject}&body=${emailBody}`;
             window.location.href = mailtoLink;
 
             // Show success message

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brand Identity Design - Your Name E-Portfolio</title>
+    <title>User Experience Research - Allison Yu E-Portfolio</title>
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,7 +12,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../index.html">Your Name</a>
+                <a href="../index.html">Allison Yu</a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -39,13 +39,13 @@
                 <nav class="breadcrumb">
                     <a href="../index.html">Home</a> / 
                     <a href="../work.html">Work</a> / 
-                    <span>Brand Identity Design</span>
+                    <span>Multilingual LLMs Morality Benchmark Research</span>
                 </nav>
-                <h1>Brand Identity Design</h1>
-                <p class="project-subtitle">Complete brand identity package including logo design and guidelines</p>
+                <h1>Multilingual LLMs Morality Benchmark Research</h1>
+                <p class="project-subtitle">A multilingual benchmark study evaluating the moral reasoning and safety capabilities of major LLMs</p>
                 <div class="project-meta">
-                    <span class="project-category">Design</span>
-                    <span class="project-date">2024</span>
+                    <span class="project-category">Research</span>
+                    <span class="project-date">2025</span>
                 </div>
             </div>
         </section>
@@ -56,171 +56,73 @@
                     <div class="project-main">
                         <h2>Project Overview</h2>
                         <p>
-                            A comprehensive brand identity design project for a tech startup looking to establish 
-                            a strong visual presence in the market. This project involved creating a complete 
-                            brand system from concept to implementation, including logo design, color palette, 
-                            typography, and brand guidelines.
+                            A research project evaluating the moral reasoning and safety capabilities of major LLMs across 
+                            multiple languages, with the goal of establishing a benchmark for multilingual ethical LLM evaluation.
                         </p>
                         
-                        <h3>Design Process</h3>
+                        <h3>Research Methodology</h3>
                         <p>
-                            The design process began with extensive research into the company's values, target 
-                            audience, and competitive landscape. Multiple concepts were developed and refined 
-                            based on client feedback, resulting in a final design that perfectly captures the 
-                            brand's essence and appeals to its target market.
+                            We built a 500-question benchmark dataset across 5 ethical categories (legality, moral judgment, 
+                            bias & stereotypes, harm prevention, and consent & autonomy). To assess the limits of LLM safety features, 
+                            questions in the harm prevention and consent & autonomy categories were designed to be indirect and deceptive, 
+                            testing whether models could detect harmful intent disguised as harmless requests. We tested 5 major LLMs (GPT-5, 
+                            Claude Sonnet 4, Gemini 2.5 Pro, Llama 4, Qwen3) across 6 languages (English, Spanish, Arabic, Hindi, Chinese, 
+                            Swahili) using a Gemini-as-judge scoring system. See the presentation slides below or the research paper for 
+                            more details.
                         </p>
 
-                        <div class="project-image">
-                            <div class="image-placeholder large">
-                                <i class="fas fa-palette"></i>
-                            </div>
-                        </div>
-
-                        <h3>Key Deliverables</h3>
+                        <h3>Key Findings</h3>
                         <ul>
-                            <li>Primary and secondary logo variations</li>
-                            <li>Comprehensive color palette</li>
-                            <li>Typography system and guidelines</li>
-                            <li>Brand usage guidelines document</li>
-                            <li>Business card and stationery designs</li>
-                            <li>Social media templates</li>
-                            <li>Website design mockups</li>
-                            <li>Brand application examples</li>
+                            <li>GPT-5 led overall with ~92% accuracy; Qwen had the lowest at ~66%</li>
+                            <li>All models performed better in straightforward categories (legality, moral judgment) than in deceptive ones (consent, harm prevention)</li>
+                            <li>Models scored higher in low-resource languages on trick questions (likely because they flagged harmful keywords rather than reading context)</li>
+                            <li>Qwen defaulted to Chinese law when answering legality questions, regardless of the user's location</li>
+                            <li>Gemini showed the largest performance gap between regular and trick categories (2+ point difference)</li>
                         </ul>
-
-                        <h3>Design Philosophy</h3>
-                        <p>
-                            The brand identity was designed to be modern, clean, and versatile, ensuring it 
-                            works effectively across all touchpoints from digital to print. The design emphasizes 
-                            clarity, professionalism, and approachability while maintaining a unique visual identity.
-                        </p>
                     </div>
 
                     <div class="project-sidebar">
                         <div class="project-info-card">
                             <h3>Project Details</h3>
                             <div class="info-item">
-                                <strong>Client:</strong> Tech Startup Inc.
+                                <strong>Client:</strong> Independent Contractor
                             </div>
                             <div class="info-item">
-                                <strong>Duration:</strong> 6 weeks
+                                <strong>Duration:</strong> Jun. 2025 - Sept. 2025
                             </div>
                             <div class="info-item">
-                                <strong>Team Size:</strong> 2 designers
-                            </div>
-                            <div class="info-item">
-                                <strong>My Role:</strong> Lead Designer
+                                <strong>Team Size:</strong> 3 researchers
                             </div>
                         </div>
 
                         <div class="tech-stack">
-                            <h3>Tools & Software</h3>
+                            <h3>Research Tools</h3>
                             <div class="tech-tags">
-                                <span class="tech-tag">Illustrator</span>
-                                <span class="tech-tag">Photoshop</span>
-                                <span class="tech-tag">Figma</span>
-                                <span class="tech-tag">InDesign</span>
-                                <span class="tech-tag">Sketch</span>
+                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Large Language Models</span>
+                                <span class="tech-tag">Prompt Engineering</span>
                             </div>
                         </div>
 
                         <div class="project-links">
                             <h3>Links</h3>
-                            <a href="#" class="btn btn-primary">View Portfolio</a>
-                            <a href="#" class="btn btn-outline">Case Study PDF</a>
+                            <a href="https://arxiv.org/abs/2510.08776" class="btn btn-primary" target="_blank">Research Paper</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="project-results">
+        <section class="project-presentation">
             <div class="container">
-                <h2>Results & Impact</h2>
-                <div class="results-grid">
-                    <div class="result-card">
-                        <div class="result-number">85%</div>
-                        <div class="result-label">Brand Recognition Increase</div>
-                    </div>
-                    <div class="result-card">
-                        <div class="result-number">3x</div>
-                        <div class="result-label">Social Media Engagement</div>
-                    </div>
-                    <div class="result-card">
-                        <div class="result-number">45%</div>
-                        <div class="result-label">Website Conversion Rate</div>
-                    </div>
-                    <div class="result-card">
-                        <div class="result-number">100%</div>
-                        <div class="result-label">Client Satisfaction</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="related-projects">
-            <div class="container">
-                <h2>Related Projects</h2>
-                <div class="work-grid">
-                    <div class="work-card">
-                        <div class="work-image">
-                            <div class="image-placeholder">
-                                <i class="fas fa-pencil-ruler"></i>
-                            </div>
-                        </div>
-                        <div class="work-content">
-                            <h3>UI Component Library</h3>
-                            <p>Customizable UI component library with comprehensive documentation.</p>
-                            <a href="project6.html" class="read-more">View Project →</a>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-image">
-                            <div class="image-placeholder">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                        </div>
-                        <div class="work-content">
-                            <h3>Mobile App Development</h3>
-                            <p>Cross-platform mobile application with real-time features.</p>
-                            <a href="project4.html" class="read-more">View Project →</a>
-                        </div>
-                    </div>
+                <h2>Research Presentation</h2>
+                <div class="presentation-embed">
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTbxeCTpivsHo1rja4l6TPD0EXNnLntzkjrZFDXQ1MNq-xG4gdqSlSQyyGcbalxUaoV4KRKSa8VS-ex/pubembed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Your Name</h3>
-                    <p>Creating meaningful work that makes a difference.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../work.html">Work</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Your Name. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 
     <script src="../script.js"></script>
 </body>

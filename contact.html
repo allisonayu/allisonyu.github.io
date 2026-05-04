@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Your Name E-Portfolio</title>
+    <title>Contact - Allison Yu E-Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,7 +12,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html">Your Name</a>
+                <a href="index.html">Allison Yu</a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -36,68 +36,25 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Get In Touch</h1>
-                <p>I'd love to hear from you! Let's discuss your project or collaboration opportunities.</p>
+                <h1>Let's Connect</h1>
+                <p>I'd love to hear from you!</p>
+                <div class="contact-links">
+                    <a href="mailto:allison.a.yu@gmail.com" class="contact-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/allisonayu" class="contact-link" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/allisonayu" class="contact-link" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
         <section class="contact-section">
             <div class="container">
                 <div class="contact-content">
-                    <div class="contact-info">
-                        <h2>Let's Connect</h2>
-                        <p>
-                            Whether you have a project in mind, want to discuss potential collaborations, 
-                            or just want to say hello, I'm always interested in hearing from new people.
-                        </p>
-                        
-                        <div class="contact-methods">
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h3>Email</h3>
-                                    <p>your.email@example.com</p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h3>LinkedIn</h3>
-                                    <p>linkedin.com/in/yourprofile</p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fab fa-github"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h3>GitHub</h3>
-                                    <p>github.com/yourusername</p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h3>Phone</h3>
-                                    <p>+1 (555) 123-4567</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="response-time">
-                            <h3>Response Time</h3>
-                            <p>I typically respond to messages within 24-48 hours during business days.</p>
-                        </div>
-                    </div>
                     
                     <div class="contact-form-container">
                         <form id="contactForm" class="contact-form">
@@ -123,23 +80,6 @@
                                 <textarea id="message" name="message" rows="6" required></textarea>
                             </div>
                             
-                            <div class="form-group">
-                                <label for="project-type">Project Type (Optional)</label>
-                                <select id="project-type" name="project-type">
-                                    <option value="">Select a project type</option>
-                                    <option value="web-development">Web Development</option>
-                                    <option value="design">Design Project</option>
-                                    <option value="consulting">Consulting</option>
-                                    <option value="collaboration">Collaboration</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group checkbox-group">
-                                <input type="checkbox" id="newsletter" name="newsletter">
-                                <label for="newsletter">I'd like to receive updates about your work</label>
-                            </div>
-                            
                             <button type="submit" class="btn btn-primary">Send Message</button>
                             
                             <div id="formStatus" class="form-status"></div>
@@ -149,37 +89,6 @@
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Your Name</h3>
-                    <p>Creating meaningful work that makes a difference.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="work.html">Work</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Your Name. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
