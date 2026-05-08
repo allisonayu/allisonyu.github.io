@@ -232,11 +232,6 @@ function isInViewport(element) {
     );
 }
 
-const video = document.getElementById('intro-video');
-video.addEventListener('loadedmetadata', function() {
-    video.currentTime = 0.1;
-});
-
 // Add loading animation for images
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('img');
